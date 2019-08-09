@@ -8,6 +8,7 @@ if($connect === false){
 $query = "SELECT * FROM userdata";
 
 
+
 if ($result = mysqli_query($connect, $query)){
 	if(mysqli_num_rows($result) > 0){
 		echo "<table>";
