@@ -7,7 +7,6 @@ if($connect === false){
 
 
 
-
 $query = "SELECT * FROM userdata";
 
 
