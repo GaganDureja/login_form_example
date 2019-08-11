@@ -29,9 +29,9 @@
 	<h4>Please fill the following details:</h4>
 	<form action="newregister.php" method="post">
 <table>
-	<tr><td>Name:</td><td><input type="text" name="name"></td></tr>
-	<tr><td>Username:</td><td> <input type="text" name="user"></td></tr>
-	<tr><td>Password:</td><td> <input type="Password" name="password"></td></tr>
+	<tr><td>Name:</td><td><input type="text" name="name" required=""></td></tr>
+	<tr><td>Username:</td><td> <input type="text" name="username" required=""></td></tr>
+	<tr><td>Password:</td><td> <input type="Password" name="password" required=""></td></tr>
 	<tr><td><input type="Submit" name="" value="Register"></td></tr>
     </table>
 </form>

@@ -6,21 +6,21 @@ session_start();
 $connect = mysqli_connect('localhost', 'root', 'Password@123', 'Welcome');
 
 
-$name = $_post['name'];
-$username = $_post['username'];
-$password = $_post['password'];
+$name = $_POST['name'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-$select_query = "select * from userdata where username = '$username' ";
+$select_query = "SELECT * FROM userdata WHERE username= '$username' ";
 
 $result = mysqli_query($connect, $select_query);
 
 $number = mysqli_num_rows($result);
 
-if($number == 1){
-	echo "username already exists";
+if($number > 0){
+	echo "Username already exists";
 }else {
-	$new_register = "insert into userdata(name, username, password)
-	values ('$name', '$user', '$pass')";
+	$new_register = "INSERT INTO userdata(name, username, password)
+	                VALUES ('$name', '$username', '$password')";
 	mysqli_query($connect, $new_register);
 	echo "Registration Successful";
 }

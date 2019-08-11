@@ -27,9 +27,9 @@
 </style>
 <body>
 	<h3>Please enter your details:</h3>
-	<form action="validate.php" method="post">
+	<form action="validate.php" method="post" >
 		<table>
-	       <tr><td>Username:</td><td> <input type="text" name="username" id="username" value="gagan" ></td></tr>
+	       <tr><td>Username:</td><td> <input type="text" name="username" id="username" value="" ></td></tr>
 	       <tr><td>Password:</td><td> <input type="Password" name="password" id="password" ></td></tr>
 	       <tr><td><input type="Submit" name="" value="Login"></td></tr>
         </table>
