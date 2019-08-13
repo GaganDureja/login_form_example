@@ -9,7 +9,7 @@ $connect = mysqli_connect('localhost', 'root', 'Password@123', 'Welcome');
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$select_query = "SELECT * FROM userdata WHERE username = '$username' && password = '$password'" ;
+$select_query = "SELECT * FROM users WHERE username = '$username' && password = '$password'" ;
 
 $result = mysqli_query($connect, $select_query);
 
