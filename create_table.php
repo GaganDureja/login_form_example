@@ -1,6 +1,6 @@
 <?php
 
-$connect = mysqli_connect('localhost', 'root', 'Password@123', 'Welcome_test');
+$connect = mysqli_connect('localhost', 'root', 'Password@123', 'Welcome');
 
 $create_table_query = "CREATE TABLE users(
                        name varchar(50),

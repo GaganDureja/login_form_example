@@ -2,7 +2,7 @@
 
 $connect = mysqli_connect('localhost', 'root', 'Password@123');
 
-$create_db_query = "CREATE DATABASE Welcome_test";
+$create_db_query = "CREATE DATABASE Welcome";
 
 
 
