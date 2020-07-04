@@ -11,7 +11,7 @@ $username = mysqli_real_escape_string($connect, $username); #for sql injection p
 $password = $_POST['password'];
 $password = mysqli_real_escape_string($connect, $password);
 
-$select_query = "SELECT * FROM users WHERE username = '$username' && password = '$password' " ;
+$select_query = "SELECT * FROM users WHERE username = '$username' && BINARY password = '$password' " ;
 
 $result = mysqli_query($connect, $select_query);
 
